@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<clickhouse>
+    <profiles>
+        <default>
+            <!-- Remove query size limits -->
+            <max_query_size>10000000000</max_query_size>
+            <max_ast_elements>10000000</max_ast_elements>
+            <max_expanded_ast_elements>10000000</max_expanded_ast_elements>
+
+            <!-- Remove execution time limits -->
+            <max_execution_time>0</max_execution_time>
+
+            <!-- Increase memory limits -->
+            <max_memory_usage>100000000000</max_memory_usage>
+            <max_memory_usage_for_user>100000000000</max_memory_usage_for_user>
+
+            <!-- Remove result size limits -->
+            <max_result_rows>0</max_result_rows>
+            <max_result_bytes>0</max_result_bytes>
+
+            <!-- Increase HTTP limits -->
+            <http_max_uri_size>10485760</http_max_uri_size>
+
+            <!-- Allow large GROUP BY -->
+            <max_bytes_before_external_group_by>0</max_bytes_before_external_group_by>
+
+            <!-- Allow large sorts -->
+            <max_bytes_before_external_sort>0</max_bytes_before_external_sort>
+
+            <!-- Remove array size limits -->
+            <max_array_size>1000000</max_array_size>
+
+            <!-- Increase string size limits -->
+            <max_string_size>100000000</max_string_size>
+        </default>
+    </profiles>
+</clickhouse>
